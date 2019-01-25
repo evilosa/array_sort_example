@@ -7,7 +7,7 @@ yarn install
 # Tests
 Run next command to run the tests
 ```bash
-yarn test
+yarn test --verbose --collectCoverage
 ```
 
 # Development
