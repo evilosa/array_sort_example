@@ -4,6 +4,14 @@
 const testFunc = require('../src/index')
 
 describe('Sort functions', () => {
+  it('should throw the error when empty data send', () => {
+    expect(() => { testFunc() }).toThrowErrorMatchingSnapshot()
+  })
+
+  it('should throw the TypeError when wrong data type sent', () => {
+    expect(() => { testFunc(['123', '233']) }).toThrow(TypeError)
+  })
+
   it('should provide correct results of work for case 1', () => {
     const source = '103 123 4444 99 2000'
     const result = '2000 103 123 4444 99'
