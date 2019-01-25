@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Function calculateNumberWeight should throw the TypeError for wrong type 1`] = `"Calculate number weight: Wrong number 1234 was provided"`;
